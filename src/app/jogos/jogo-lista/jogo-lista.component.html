@@ -1,0 +1,97 @@
+<div class="container">
+
+    <!-- Botão para adicionar jogo -->
+    <div class="controls">
+        <button mat-raised-button color="primary" (click)="exibirFormulario = !exibirFormulario">
+            {{ exibirFormulario ? 'Cancelar' : 'Adicionar Jogo' }}
+        </button>
+    </div>
+    <!-- Formulário de adição de jogos -->
+    <mat-card appearance="outlined" *ngIf="exibirFormulario" style="padding: 14px;">
+        <mat-card-header>
+          <mat-card-title>Adicionar um jogo</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="formulario-adicao">
+            <mat-form-field appearance="fill" style="min-width: 250px;">
+                <mat-label>Título</mat-label>
+                <input matInput [(ngModel)]="novoJogo.titulo" placeholder="Título do jogo" />
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill" style="max-width: 160px;">
+                <mat-label>Gênero</mat-label>
+                <input matInput [(ngModel)]="novoJogo.genero" placeholder="Gênero do jogo" />
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill" style="max-width: 160px;">
+                <mat-label>Plataforma</mat-label>
+                <input matInput [(ngModel)]="novoJogo.plataforma" placeholder="Plataforma" />
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill" style="max-width: 180px;">
+                <mat-label>Data de Lançamento</mat-label>
+                <input matInput [(ngModel)]="novoJogo.dataLancamento" [matDatepicker]="picker" placeholder="Data de Lançamento" />
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill" style="min-width: 400px;">
+                <mat-label>URL da Capa</mat-label>
+                <input matInput [(ngModel)]="novoJogo.capa" placeholder="URL da capa" />
+            </mat-form-field>  
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="adicionarOuSalvarJogo()">
+                {{ jogoEditando ? 'Salvar Alterações' : 'Adicionar Jogo' }}
+            </button>
+        </mat-card-actions>
+      </mat-card>
+      
+
+    <!-- Campo de busca -->
+    <mat-form-field appearance="fill" style="margin-top: 10px;">
+        <mat-label>Buscar Jogos</mat-label>
+        <input matInput [(ngModel)]="searchTerm" placeholder="Buscar jogos" (input)="buscarJogos()" />
+    </mat-form-field>
+
+    <!-- Tabela de jogos -->
+    <table mat-table [dataSource]="jogosFiltrados" class="mat-elevation-z8">
+        <ng-container matColumnDef="capa">
+            <th mat-header-cell *matHeaderCellDef>Capa</th>
+            <td mat-cell *matCellDef="let jogo">
+                <img [src]="jogo.capa" alt="Capa do jogo" style="width: 60px; height: auto;" />
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="titulo">
+            <th mat-header-cell *matHeaderCellDef>Título</th>
+            <td mat-cell *matCellDef="let jogo">{{ jogo.titulo }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="genero">
+            <th mat-header-cell *matHeaderCellDef>Gênero</th>
+            <td mat-cell *matCellDef="let jogo">{{ jogo.genero }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="plataforma">
+            <th mat-header-cell *matHeaderCellDef>Plataforma</th>
+            <td mat-cell *matCellDef="let jogo">{{ jogo.plataforma }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dataLancamento">
+            <th mat-header-cell *matHeaderCellDef>Data de Lançamento</th>
+            <td mat-cell *matCellDef="let jogo">{{ jogo.dataLancamento | date:'dd/MM/yyyy' }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef>Ações</th>
+            <td mat-cell *matCellDef="let jogo">
+                <button mat-raised-button color="primary" (click)="editarJogo(jogo)">Editar</button>
+                <button mat-raised-button color="warn" (click)="removerJogo(jogo.id)">Remover</button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
+  

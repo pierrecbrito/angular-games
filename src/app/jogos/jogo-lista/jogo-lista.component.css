@@ -1,0 +1,36 @@
+.container {
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 10px;
+  }
+
+.formulario-adicao {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
