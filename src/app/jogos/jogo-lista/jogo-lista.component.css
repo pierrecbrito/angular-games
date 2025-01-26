@@ -33,4 +33,39 @@
     margin-top: 20px;
 }
 
+.celula-acoes * {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
 
+mat-paginator {
+  margin-top: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 
+              0 1px 1px 0 rgba(0,0,0,.14), 
+              0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+@media (max-width: 600px) {
+  mat-paginator {
+    font-size: 0.8rem;
+  }
+  
+  .mat-paginator-page-size-label {
+    display: none;
+  }
+}
+
+.mat-sort-header-container {
+  justify-content: center;
+}
+
+.mat-header-cell {
+  font-weight: bold;
+  color: #3f51b5;
+}
+
+.mat-sort-header-arrow {
+  color: #ff4081;
+}

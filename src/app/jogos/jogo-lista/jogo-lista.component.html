@@ -2,14 +2,14 @@
 
     <!-- Botão para adicionar jogo -->
     <div class="controls">
-        <button mat-raised-button color="primary" (click)="exibirFormulario = !exibirFormulario">
+        <button mat-raised-button color="primary" (click)="mostrarOuCancelarFormulario()">
             {{ exibirFormulario ? 'Cancelar' : 'Adicionar Jogo' }}
         </button>
     </div>
     <!-- Formulário de adição de jogos -->
     <mat-card appearance="outlined" *ngIf="exibirFormulario" style="padding: 14px;">
         <mat-card-header>
-          <mat-card-title>Adicionar um jogo</mat-card-title>
+          <mat-card-title>{{ jogoEditando ? 'Editar Jogo' : 'Adicionar Jogo' }}</mat-card-title>
         </mat-card-header>
         <mat-card-content class="formulario-adicao">
             <mat-form-field appearance="fill" style="min-width: 250px;">
@@ -48,13 +48,16 @@
       
 
     <!-- Campo de busca -->
-    <mat-form-field appearance="fill" style="margin-top: 10px;">
+    <mat-form-field appearance="fill" style="margin-top: 10px; min-width: 400px;">
         <mat-label>Buscar Jogos</mat-label>
-        <input matInput [(ngModel)]="searchTerm" placeholder="Buscar jogos" (input)="buscarJogos()" />
+        <input matInput [(ngModel)]="searchTerm" placeholder="Pesquisar por título, gênero, plataforma ou data" (input)="buscarJogos()" />
+        <button matSuffix mat-icon-button *ngIf="searchTerm" (click)="resetarPesquisa()">
+            <mat-icon>close</mat-icon>
+        </button>
     </mat-form-field>
 
     <!-- Tabela de jogos -->
-    <table mat-table [dataSource]="jogosFiltrados" class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
         <ng-container matColumnDef="capa">
             <th mat-header-cell *matHeaderCellDef>Capa</th>
             <td mat-cell *matCellDef="let jogo">
@@ -63,7 +66,7 @@
         </ng-container>
 
         <ng-container matColumnDef="titulo">
-            <th mat-header-cell *matHeaderCellDef>Título</th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header id="header-titulo">Título</th>
             <td mat-cell *matCellDef="let jogo">{{ jogo.titulo }}</td>
         </ng-container>
 
@@ -77,21 +80,31 @@
             <td mat-cell *matCellDef="let jogo">{{ jogo.plataforma }}</td>
         </ng-container>
 
-        <ng-container matColumnDef="dataLancamento">
-            <th mat-header-cell *matHeaderCellDef>Data de Lançamento</th>
+        <ng-container matColumnDef="dataLancamento" id="header-data">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Data de Lançamento</th>
             <td mat-cell *matCellDef="let jogo">{{ jogo.dataLancamento | date:'dd/MM/yyyy' }}</td>
         </ng-container>
 
         <ng-container matColumnDef="acoes">
             <th mat-header-cell *matHeaderCellDef>Ações</th>
-            <td mat-cell *matCellDef="let jogo">
-                <button mat-raised-button color="primary" (click)="editarJogo(jogo)">Editar</button>
-                <button mat-raised-button color="warn" (click)="removerJogo(jogo.id)">Remover</button>
+            <td mat-cell *matCellDef="let jogo" class="celula-acoes">
+                <button mat-icon-button color="accent" (click)="editarJogo(jogo)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" (click)="removerJogo(jogo)">
+                    <mat-icon>delete</mat-icon>
+                </button>
             </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns; trackBy: trackById"></tr>
     </table>
+    <mat-paginator [pageSizeOptions]="pageSizeOptions"
+               [pageSize]="pageSize"
+               showFirstLastButtons
+               aria-label="Selecione a página"
+               (page)="onPageChange($event)">
+    </mat-paginator>
 </div>
   
