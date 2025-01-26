@@ -220,7 +220,7 @@ export class JogoListaComponent implements OnInit, AfterViewInit {
       if (confirmado) {
         this.jogoService.deleteJogo(jogo.id).subscribe({
           next: () => {
-            this.dataSource.data = this.dataSource.data.filter(jogo => jogo.id !== jogo.id);
+            this.carregarJogos();
             this.mostrarSucesso('Jogo excluído com sucesso!');
           },
           error: (err) => this.mostrarErro(`Falha na exclusão: ${err.message}`)

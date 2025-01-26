@@ -1,0 +1,268 @@
+{
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "The Legend of Zelda: Breath of the Wild",
+      "genero": "Aventura",
+      "dataLancamento": "2017-03-03",
+      "plataforma": "Nintendo Switch",
+      "capa": "https://upload.wikimedia.org/wikipedia/pt/0/0f/Legend_of_Zelda_Breath_of_the_Wild_capa.png"
+    },
+    {
+      "id": "2",
+      "titulo": "God of War",
+      "genero": "Ação",
+      "dataLancamento": "2018-04-20",
+      "plataforma": "PlayStation 4",
+      "capa": "https://m.media-amazon.com/images/I/61Ao3yzr9xL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Red Dead Redemption 2",
+      "genero": "Ação",
+      "dataLancamento": "2018-10-26",
+      "plataforma": "PlayStation 4",
+      "capa": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png"
+    },
+    {
+      "id": "4",
+      "titulo": "The Witcher 3: Wild Hunt",
+      "genero": "RPG",
+      "dataLancamento": "2015-05-19",
+      "plataforma": "PC",
+      "capa": "https://cdn1.epicgames.com/offer/14ee004dadc142faaaece5a6270fb628/EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S2_1200x1600-53a8fb2c0201cd8aea410f2a049aba3f"
+    },
+    {
+      "id": "5",
+      "titulo": "Cyberpunk 2077",
+      "genero": "RPG",
+      "dataLancamento": "2020-12-10",
+      "plataforma": "PC",
+      "capa": "https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5"
+    },
+    {
+      "id": "6",
+      "titulo": "Horizon Zero Dawn",
+      "genero": "Aventura",
+      "dataLancamento": "2017-02-28",
+      "plataforma": "PlayStation 4",
+      "capa": "https://m.media-amazon.com/images/I/81i-E0DuBrL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "7",
+      "titulo": "Spider-Man",
+      "genero": "Ação",
+      "dataLancamento": "2018-09-07",
+      "plataforma": "PlayStation 4",
+      "capa": "https://image.api.playstation.com/vulcan/ap/rnd/202011/0402/C784xeOFo2wViCf4m5bxgoeH.png"
+    },
+    {
+      "id": "8",
+      "titulo": "Assassin's Creed Valhalla",
+      "genero": "Ação",
+      "dataLancamento": "2020-11-10",
+      "plataforma": "PC",
+      "capa": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1520/EDtkdijFRwbmGKk1G9lrDoEF.png"
+    },
+    {
+      "id": "9",
+      "titulo": "Ghost of Tsushima",
+      "genero": "Ação",
+      "dataLancamento": "2020-07-17",
+      "plataforma": "PlayStation 4",
+      "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOPrsa4DgPJRdBfuqI1aHlSgsp4vIseZeEbw&s"
+    },
+    {
+      "id": "10",
+      "titulo": "Final Fantasy VII Remake",
+      "genero": "RPG",
+      "dataLancamento": "2020-04-10",
+      "plataforma": "PlayStation 4",
+      "capa": "https://upload.wikimedia.org/wikipedia/pt/0/09/Final_Fantasy_VII_Remake_capa.png"
+    },
+    {
+      "id": "11",
+      "titulo": "Resident Evil 2",
+      "genero": "Terror",
+      "dataLancamento": "2019-01-25",
+      "plataforma": "PC",
+      "capa": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0204/uDFoGvnMTTCLVmTwjj0njGWC.png"
+    },
+    {
+      "id": "12",
+      "titulo": "Sekiro: Shadows Die Twice",
+      "genero": "Ação",
+      "dataLancamento": "2019-03-22",
+      "plataforma": "PC",
+      "capa": "https://upload.wikimedia.org/wikipedia/pt/7/7b/Sekiro_Shadows_Die_Twice_capa.png"
+    },
+    {
+      "id": "13",
+      "titulo": "Dark Souls III",
+      "genero": "RPG",
+      "dataLancamento": "2016-04-12",
+      "plataforma": "PC",
+      "capa": "https://image.api.playstation.com/cdn/UP0700/CUSA03388_00/v8JlD8KcQUtTqaLBmpFnj1ESRR5zMkLk.png"
+    },
+    {
+      "id": "14",
+      "titulo": "Bloodborne",
+      "genero": "RPG",
+      "dataLancamento": "2015-03-24",
+      "plataforma": "PlayStation 4",
+      "capa": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/NVmnBXze9ElHzU6SmykrJLIV.png"
+    },
+    {
+      "id": "15",
+      "titulo": "Nioh 2",
+      "genero": "Ação",
+      "dataLancamento": "2020-03-13",
+      "plataforma": "PlayStation 4",
+      "capa": "https://image.api.playstation.com/vulcan/img/rnd/202011/0623/OKKpWNnsCZpURW2N6nnhMcj6.png"
+    },
+    {
+      "id": "16",
+      "titulo": "Doom Eternal",
+      "genero": "Ação",
+      "dataLancamento": "2020-03-20",
+      "plataforma": "PC",
+      "capa": "https://upload.wikimedia.org/wikipedia/pt/8/81/Doom_Eternal_capa.png"
+    },
+    {
+      "id": "17",
+      "titulo": "Control",
+      "genero": "Ação",
+      "dataLancamento": "2019-08-27",
+      "plataforma": "PC",
+      "capa": "https://upload.wikimedia.org/wikipedia/en/e/e5/Control_game_cover_art.jpg"
+    },
+    {
+      "id": "18",
+      "titulo": "Death Stranding",
+      "genero": "Aventura",
+      "dataLancamento": "2019-11-08",
+      "plataforma": "PlayStation 4",
+      "capa": "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Death_Stranding.jpg/220px-Death_Stranding.jpg"
+    },
+    {
+      "id": "19",
+      "titulo": "The Last of Us Part II",
+      "genero": "Ação",
+      "dataLancamento": "2020-06-19",
+      "plataforma": "PlayStation 4",
+      "capa": "https://cdn1.epicgames.com/offer/7713e3fa4b234e0d8f553044205d53b6/EGS_TheLastofUsPartIIRemastered_NaughtyDogLLCNixxesSoftwareIronGalaxy_S2_1200x1600-2e13755a6b3fec2ee9dbcc231a1cf39c"
+    },
+    {
+      "id": "20",
+      "titulo": "Persona 5",
+      "genero": "RPG",
+      "dataLancamento": "2016-09-15",
+      "plataforma": "PlayStation 4",
+      "capa": "https://image.api.playstation.com/vulcan/img/cfn/11307XlqDFlHmHWGjBPndSappCDTnE9OmnP2P-dSzcvLX9i0pvH_okJOl6dP1AnZefxthD-2k3RrsdzYU_BqUy9K5_sv-Tnx.png"
+    },
+    {
+      "id": "21",
+      "titulo": "Monster Hunter: World",
+      "genero": "RPG",
+      "dataLancamento": "2018-01-26",
+      "plataforma": "PC",
+      "capa": "https://image.api.playstation.com/vulcan/img/cfn/11307RW7B5mvRMeOG-1pM9RnGdpRQVQ2iXinFe9755wHVXH0-mRqwizRWZQK8wMHat3XhtITgBGvRuT7JLJkkZenNxUerkoj.png"
+    },
+    {
+      "id": "22",
+      "titulo": "Gears 5",
+      "genero": "Ação",
+      "dataLancamento": "2019-09-10",
+      "plataforma": "Xbox One",
+      "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6XWCS8jIhua2dQSvj0cYoeFBXw6afPFnoA&s"
+    },
+    {
+      "id": "23",
+      "titulo": "Forza Horizon 4",
+      "genero": "Corrida",
+      "dataLancamento": "2018-10-02",
+      "plataforma": "Xbox One",
+      "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI3C_Blw3SbvkjIhvEU1Ex00g3oHDXgnI45w&s"
+    },
+    {
+      "id": "24",
+      "titulo": "Halo Infinite",
+      "genero": "Ação",
+      "dataLancamento": "2021-12-08",
+      "plataforma": "Xbox Series X",
+      "capa": "https://store-images.s-microsoft.com/image/apps.21536.13727851868390641.c9cc5f66-aff8-406c-af6b-440838730be0.68796bde-cbf5-4eaa-a299-011417041da6"
+    },
+    {
+      "id": "25",
+      "titulo": "FIFA 21",
+      "genero": "Esporte",
+      "dataLancamento": "2020-10-09",
+      "plataforma": "PC",
+      "capa": "https://m.media-amazon.com/images/I/81pM+GYryKL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "26",
+      "titulo": "NBA 2K21",
+      "genero": "Esporte",
+      "dataLancamento": "2020-09-04",
+      "plataforma": "PC",
+      "capa": "https://assets.2k.com/1a6ngf98576c/5DYwMCuE9rOloEOJkPGYTr/476ad15ed61a038bba13eaf81e3c89f3/DAME_828x828.jpg"
+    },
+    {
+      "id": "27",
+      "titulo": "Madden NFL 21",
+      "genero": "Esporte",
+      "dataLancamento": "2020-08-28",
+      "plataforma": "PC",
+      "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_NFdTtsAkjVfe2fCd4x5KgFoKbB5VWahI2w&s"
+    },
+    {
+      "id": "28",
+      "titulo": "Call of Duty: Modern Warfare",
+      "genero": "Ação",
+      "dataLancamento": "2019-10-25",
+      "plataforma": "PC",
+      "capa": "https://image.api.playstation.com/cdn/UP0002/CUSA15240_00/iteYPVeiDDVwzYsnL9RZBCDhhkBTLSD8.png"
+    },
+    {
+      "id": "29",
+      "titulo": "Battlefield V",
+      "genero": "Ação",
+      "dataLancamento": "2018-11-20",
+      "plataforma": "PC",
+      "capa": "https://image.api.playstation.com/cdn/UP0006/CUSA08724_00/knyiQNrzbp6tEe8t04AYRhhJUF5wLIGO.png"
+    },
+    {
+      "id": "30",
+      "titulo": "Apex Legends",
+      "genero": "Ação",
+      "dataLancamento": "2019-02-04",
+      "plataforma": "PC",
+      "capa": "https://upload.wikimedia.org/wikipedia/pt/a/ad/Apex_legends_capa.jpg"
+    },
+    {
+      "id": "31",
+      "titulo": "Battlefield 2",
+      "genero": "Ação",
+      "plataforma": "PC",
+      "dataLancamento": "2005-06-21T03:00:00.000Z",
+      "capa": "https://upload.wikimedia.org/wikipedia/pt/a/aa/Battlefield_2_capa.png"
+    },
+    {
+      "id": "32",
+      "titulo": "Counter-Strike 2",
+      "genero": "Ação",
+      "plataforma": "PC",
+      "dataLancamento": "2023-10-27T03:00:00.000Z",
+      "capa": "https://notadogame.com/uploads/game/cover/250x/650e513cbec38.jpg"
+    },
+    {
+      "id": "33",
+      "titulo": "Garena Free Fire",
+      "genero": "Ação",
+      "plataforma": "Mobile",
+      "dataLancamento": "2017-12-04T02:00:00.000Z",
+      "capa": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIj51ED5zKVKYcqGjnBjoda08Jadox6CUNHQ&s"
+    }
+  ]
+}
